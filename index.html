@@ -9,124 +9,156 @@
 </head>
 <style> 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-	*{
-		margin: 0;
-		padding: 0;
-	}
+    *{
+        margin: 0;
+        padding: 0;
+    }
     header {
     color: #e54e43;
     text-align: center;
     margin-left: 0%;
     font-size: 2em;
     margin-top: 2%;
-        
     }
 
-	body{
-		background-color: #D6E8FF;
-		font-family: 'Roboto Condensed';
+    body{
+        background-color: #D6E8FF;
+        font-family: 'Roboto Condensed';
         border-radius: 10px 20px 30px;
-	}
+    }
 
-	.nav_tabs{
-		width: 900px;
-		height: 6000px;
-		margin: 50px auto;
-		background-color: #fff;
-		position: relative;
+    .nav_tabs{
+        width: 900px;
+        height: 6000px;
+        margin: 50px auto;
+        background-color: #fff;
+        position: relative;
         border-radius: 10px ;
-	}
+    }
 
-	.nav_tabs ul{
-		list-style: none;
+    .nav_tabs ul{
+        list-style: none;
         border-radius: 10px;
-	}
+    }
 
-	.nav_tabs ul li{
-		float: left;
+    .nav_tabs ul li{
+        float: left;
         border-radius: 10px;
-	}
+    }
 
-	.tab_label{
-		display: block;
-		width: 100px;
-		background-color: black;
-		padding: 25px;
-		font-size: 20px;
-		color:#fff;
-		cursor: pointer;
-		text-align: center;
-        
-	}
+    .tab_label{
+        display: block;
+        width: 100px;
+        background-color: black;
+        padding: 25px;
+        font-size: 20px;
+        color:#fff;
+        cursor: pointer;
+        text-align: center; 
+    }
 
+    .nav_tabs .rd_tab { 
+    display:none;
+    position: absolute;
+    }
 
-	.nav_tabs .rd_tab { 
-	display:none;
-	position: absolute;
-}
+    .nav_tabs .rd_tab:checked ~ label { 
+    background-color: #e54e43;
+    color:#fff;
+    }
 
-.nav_tabs .rd_tab:checked ~ label { 
-	background-color: #e54e43;
-	color:#fff;}
+    .tab-content{
+    border-top: solid 5px #e54e43;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 900px;
+    left: 0;    
+    }
 
-.tab-content{
-	border-top: solid 5px #e54e43;
-	background-color: #fff;
-	display: none;
-	position: absolute;
-	height: 320px;
-	width: 900px;
-	left: 0;	
-}
+    .rd_tab:checked ~ .tab-content{
+    display: block;
+    }
 
-.rd_tab:checked ~ .tab-content{
-	display: block;
-}
-.tab-content h2{
-	padding: 10px;
-	color: #e54e43;
-}
-.tab-content article{
-	padding: 10px;
-	color: black;
-}
-    img    {
+    .tab-content h2{
+    padding: 10px;
+    color: #e54e43;
+    }
+
+    .tab-content article{
+    padding: 10px;
+    color: black;
+    }
+
+    img{
     border-radius: 50%;
-}
+    }
 
-a:link, a:visited, a:active {
-		text-decoration:none;
+    a:link, a:visited, a:active {
+        text-decoration:none;
         color: #000;
-		}
-a:hover {
-		text-decoration: underline;
-		color:#000;
-		background:#ff0;
-		}
-/* Works on Firefox */
-* {
-		scrollbar-width: thin;
-		scrollbar-color: white white;
-	  }
-	  
-	  /* Works on Chrome, Edge, and Safari */
-	  *::-webkit-scrollbar {
-		width: 12px;
-	  }
-	  
-	  *::-webkit-scrollbar-track {
-		background: white;
-	  }
-	  
-	  *::-webkit-scrollbar-thumb {
-		background-color: red;
-		border-radius: 20px;
-		border: 3px solid white;
-	  }
+    
+    }
+    a:hover {
+        text-decoration: underline;
+        color:#000;
+        background:#ff0;
+    }
 
+/* Works on Firefox */
+*   {
+        scrollbar-width: thin;
+        scrollbar-color: white white;
+    }
+      
+/* Works on Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 12px;
+    }
+      
+      *::-webkit-scrollbar-track {
+        background: white;
+    }
+      
+      *::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 20px;
+        border: 3px solid white;
+    }
+
+    h3 {
+        text-align:center;
+        line-height:48px; 
+        font-family:'Arial';
+        text-decoration: underline;
+    }
+
+    p{
+        font-family:'Arial';
+        line-height:24px; 
+    }
+
+    ul {
+        font-family:'Arial';
+        line-height:24px; 
+    }
+
+    article {
+        font-family:'Arial';
+        line-height:24px; 
+    }
+
+    h4{
+        text-align:center;
+        line-height:48px; 
+        font-family:'Arial'; 
+        text-decoration: underline;
+    }
+        
 </style>
+
 <body>
-   
     <header>
         <h1>WebQuest</h1>
     </header>
@@ -140,15 +172,17 @@ a:hover {
                     <article>
                             <br><h3><hr> <b>Objetivos da Web Quest</b>
 
-
                             <br></h3>
                                 
                                 &bull; Obter conhecimentos específicos sobre os conteúdos expostos em sala de aula.<br>
-                                &bull; Incentivar no aprendizado<br>
+                                &bull; Incentivar no Aprendizado<br>
                                 &bull; Ajudar outras pessoas a terem acesso a essa ferramenta<br>
 
                             <br><h3><hr>Introdução</h3>
-                <p><ul>Esse WebQuest foi desenvolvido no dia 11 de Agosto de 2021, pelos os aluno de Análise e Desenvolvimento de Sistemas: Daniel da Anunciação França Leite, Charles Magalhães Lopes Junior, Enzo Giovanni Mendes, Guilherme Zagato e João Victor Holtz Palma da Faculdade de Tecnologia de Carapicuíba, para a matéria de Cálculo do Professor responsável: Luciano Octavio Condori Huanca, com o objetivo exclusivo de material de apoio e como forma de trabalho para desenvolvermos um melhor estudo da matéria de Cálculo.</ul></p>
+                <p><ul> Esse WebQuest foi criado e desenvolvido no dia 11 de agosto de 2021, pelos alunos do 2° semestre que cursam Análise e Desenvolvimento de Sistemas (ADS), na Faculdade de Tecnologia do Estado de São Paulo(FATEC), localizada em Carapicuíba. <br>
+ Os desenvolvedores são: Charles Magalhães Lopes Junior, Daniel da Anunciação França Leite, Enzo Giovanni Mendes, Guilherme Zagato e João Victor Holtz Palma. <br>
+ O WebQuest foi desenvolvido para a matéria de Cálculo, na qual o professor Luciano Octavio Condori Huanca é o responsável. <br>
+ O objetivo do desenvolvimento do site é ter como função principal, um material completo para apoio aos estudos e uma forma de trabalho para desenvolvermos melhor os estudos referentes à matéria de cálculo. </ul></p>
                             </p>
         
                         </p>
@@ -164,22 +198,23 @@ a:hover {
                     <h2>Conteúdos</h2>
                     <article>
                         <h3>Cálculo Diferencial e Integral</h3>
-                        <p>As aplicações do Cálculo diferencial e integral são usadas para resolver problemas quantitativos de uma natureza em particular, e estão diretamente relacionadas a taxa de variação das grandezas, isto é, onde há movimento ou crescimento e onde forças variáveis agem produzindo aceleração, o cálculo é a matemática a ser empregada. Isto implica que seu uso se estende por várias áreas de atuação como, por exemplo, economia, astronomia, administração, engenharia e outros.</p>
+                        <p>As aplicações do Cálculo diferencial e integral são usadas para resolver problemas quantitativos de uma natureza em particular, e estão diretamente relacionadas a taxa de variação das grandezas, isto é, onde há movimento ou crescimento e onde forças variáveis agem produzindo aceleração, o cálculo é a matemática a ser empregada. Isto implica que seu uso se estende por várias áreas de atuação como, por exemplo, economia, astronomia, administração, engenharia e outros.</p> <br>
 
-                        <p>Existem relatos de aplicações do cálculo desde a Grécia Antiga, mas foi nas mãos de Isaac Newton e Gottfried Leibniz que esse processo se aperfeiçoou e se tornou o Teorema Fundamental do Cálculo. Os dois matemáticos formularam suas teorias quase que simultaneamente e independentemente um do outro, porém, como o trabalho de Leibniz era mais esclarecedor, ele foi melhor aceito pela sociedade científica da época, o que lhe rendeu todos os méritos.</p>
+                        <p>Existem relatos de aplicações do cálculo desde a Grécia Antiga, mas foi nas mãos de Isaac Newton e Gottfried Leibniz que esse processo se aperfeiçoou e se tornou o Teorema Fundamental do Cálculo. Os dois matemáticos formularam suas teorias quase que simultaneamente e independentemente um do outro, porém, como o trabalho de Leibniz era mais esclarecedor, ele foi melhor aceito pela sociedade científica da época, o que lhe rendeu todos os méritos.</p> <br>
                         
-                        <p>O cálculo como conhecemos hoje, surgiu da necessidade da resolução de dois problemas, o problema das tangentes e o problema da quadratura.</p>
+                        <p>O cálculo como conhecemos hoje, surgiu da necessidade da resolução de dois problemas, o problema das tangentes e o problema da quadratura.</p> <br>
                         
                         <p></p>
                         
-                        <p>O cálculo integral está relacionado com o problema da quadratura, que significa encontrar o valor exato da área de uma região bidimensional cuja fronteira consiste em uma ou mais curvas, ou de uma superfície tridimensional, cuja fronteira também consiste em pelo menos uma curva.</p>
+                        <p>O cálculo integral está relacionado com o problema da quadratura, que significa encontrar o valor exato da área de uma região bidimensional cuja fronteira consiste em uma ou mais curvas, ou de uma superfície tridimensional, cuja fronteira também consiste em pelo menos uma curva.</p> <br>
                         
-                        <p>O cálculo diferencial se relaciona com o problema da reta tangente, pois era complicado definir com exatidão o significado de uma reta tangente a uma curva qualquer. Após os gregos, o interesse por tangentes a curvas reapareceu no século XVII, como parte do desenvolvimento da geometria analítica. Como equações eram então utilizadas para descrever curvas, a quantidade e variedade de curvas estudadas aumentou bastante em comparação àquelas conhecidas na época clássica.</p>
+                        <p>O cálculo diferencial se relaciona com o problema da reta tangente, pois era complicado definir com exatidão o significado de uma reta tangente a uma curva qualquer. Após os gregos, o interesse por tangentes a curvas reapareceu no século XVII, como parte do desenvolvimento da geometria analítica. Como equações eram então utilizadas para descrever curvas, a quantidade e variedade de curvas estudadas aumentou bastante em comparação àquelas conhecidas na época clássica.</p> <br>
                         
                         <p>Em resumo, a derivada está ligada ao problema de traçar a tangente a uma curva enquanto a integral está relacionada com o problema de determinar a área de certas figuras planas, mas também possui muitas outras interpretações possíveis. Na realidade, a grande descoberta de Newton e de Leibniz foi que a Matemática, além de lidar com grandezas, consegue lidar com a variação das mesmas.</p>
                         <br><br>
-                        <h3>Videoaulas</h3>
-                        <iframe width="795" height="460" src="https://www.youtube.com/embed/videoseries?list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Videoaulas: Panorama do Cálculo Diferencial e Integral </h3> 
+                        <iframe width="875" height="420" src="https://www.youtube.com/embed/videoseries?list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
                     </article>
                 </div>
             </li>
@@ -188,17 +223,17 @@ a:hover {
                 <label for="Materiais" class="tab_label">Materiais</label>
                 <div class="tab-content">
                     <h2>Materiais</h2>
-                    <article>
-                        <h3><a target="_blank" href='https://prima.furg.br/images/LIVRO-CPC-2019.pdf'>Apostila de Pré-Cálculo</h3>
-                        <img src="https://i.imgur.com/MwzemEC.png"></a><br>
+                    <article>                   
+                        <h3><a target="_blank" href='https://www.cin.ufpe.br/~gamr/FAFICA/matematica/ApostilaLimiteDerivada.pdf'>Apostila de limites e derivadas</h3> 
+                        <img src="https://i.imgur.com/f0NqpTD.png" alt="Limites e derivadas" height="350" width="900"></a><br>                        
+                        <h3><a target="_blank" href='http://petengenhariasifba.com.br/wp-content/uploads/2014/01/Livro-ExerciciosResolvidosCalculo_VersaoAtual.pdf'>Exercícios Resolvidos de Cálculo: Limites e Derivadas</h3> <br>
+                        <img src="https://i.imgur.com/UV8NeIa.png" alt="Exercícios resolvidos de cálculo: limites e derivadas" height="450" width="900"></a><br><br> <br>   
                         <h3><a target="_blank" href='https://www.ime.unicamp.br/~deleo/MS123/Apostila.pdf'>Apostila de Cálculo 1</h3>
-                        <img src="https://i.imgur.com/M1C6Iz1.png"></a><br>                        
-                        <h3><a target="_blank" href='https://www.cin.ufpe.br/~gamr/FAFICA/matematica/ApostilaLimiteDerivada.pdf'>Apostila de limites e derivadas</h3>
-                        <img src="https://i.imgur.com/f0NqpTD.png"></a><br>                        
-                        <h3><a target="_blank" href='http://petengenhariasifba.com.br/wp-content/uploads/2014/01/Livro-ExerciciosResolvidosCalculo_VersaoAtual.pdf'>Exercícios Resolvidos de Cálculo: Limites e Derivadas</h3>
-                        <img src="https://i.imgur.com/UV8NeIa.png"></a><br><br> <br>                         
-                        <h3>Pato Donald no mundo da Matemática</h3>
-                        <iframe width="685" height="514" src="https://www.youtube.com/embed/cDqohQzai9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://i.imgur.com/M1C6Iz1.png" alt="Apostila cálculo 1" height="350" width="900"></a><br>  
+                        <h3><a target="_blank" href='https://prima.furg.br/images/LIVRO-CPC-2019.pdf'>Apostila de Pré-Cálculo</h3> <br>
+                        <img src="https://i.imgur.com/MwzemEC.png" alt="Apostila pré calculo" height="350" width="900"></a><br>                         
+                        <h3>Pato Donald no mundo da Matemática</h3> <br>
+                        <iframe height="415" width="877" src="https://www.youtube.com/embed/cDqohQzai9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br>                        
                     </article>
                 </div>
@@ -211,33 +246,32 @@ a:hover {
                     <article>
                         <h3>Grandes figuras relacionados ao Cálculo: </h3>
                         <br>
-                        <h4>- Isaac Newton: </h4>
-                            Newton nasceu no dia 25 de dezembro de 1642 em Woolsthorpe, Lincolnshire - no interior da Inglaterra, próximo a Cambridge. Herdou o nome de seu pai, falecido em outubro de 1642, três meses antes de seu nascimento. Newton nasceu tão prematuro que sua mãe temeu que ele não passasse daquele dia. Seu corpo miúdo caberia numa panela de um litro. Mas ao contrário das aparências, ele viveria até seus 84 anos, tempo suficiente para realizar uma das maiores produções científicas de que se tem conhecimento.</p>
+                        <h4>Isaac Newton (1643 - 1727)</h4>
+                            Newton nasceu no dia 25 de dezembro de 1642 em Woolsthorpe, Lincolnshire - no interior da Inglaterra, próximo a Cambridge. Herdou o nome de seu pai, falecido em outubro de 1642, três meses antes de seu nascimento. Newton nasceu tão prematuro que sua mãe temeu que ele não passasse daquele dia. Seu corpo miúdo caberia numa panela de um litro. Mas ao contrário das aparências, ele viveria até seus 84 anos, tempo suficiente para realizar uma das maiores produções científicas de que se tem conhecimento.</p> <br>
                             
-                            <p>Em fevereiro de 1665 desenvolveu o Teorema do Binômio que proporcionou uma nova e eficaz maneira de calcular logaritmos com exatidão e trabalhar com números de muitas casas decimais. Em maio desse mesmo ano, Newton teve um insight enquanto observava o movimento de um planeta: acabara de perceber que os planetas se movem de modo que em cada ponto a direção da velocidade é a mesma que a da reta tangente à trajetória naquele ponto. Assim, várias pequenas tangentes poderiam localmente descrever o movimento dos planetas.</p>
+                            <p>Em fevereiro de 1665 desenvolveu o Teorema do Binômio que proporcionou uma nova e eficaz maneira de calcular logaritmos com exatidão e trabalhar com números de muitas casas decimais. Em maio desse mesmo ano, Newton teve um insight enquanto observava o movimento de um planeta: acabara de perceber que os planetas se movem de modo que em cada ponto a direção da velocidade é a mesma que a da reta tangente à trajetória naquele ponto. Assim, várias pequenas tangentes poderiam localmente descrever o movimento dos planetas.</p> <br>
                             
-                            <p>A descoberta seguinte seria consequência das tangentes e Newton a batizou de fluxões, conhecido hoje como o Cálculo Diferencial. Newton percebeu logo em seguida que a integração de uma função era simplesmente a operação inversa da diferenciação. Essa descoberta levaria ao Cálculo Integral e está intimamente relacionada com o hoje em dia denominado Teorema Fundamental do Cálculo.</p>
+                            <p>A descoberta seguinte seria consequência das tangentes e Newton a batizou de fluxões, conhecido hoje como o Cálculo Diferencial. Newton percebeu logo em seguida que a integração de uma função era simplesmente a operação inversa da diferenciação. Essa descoberta levaria ao Cálculo Integral e está intimamente relacionada com o hoje em dia denominado Teorema Fundamental do Cálculo.</p> <br>
                             
-                            <p>Influenciado por Galileo e também por Kepler, Newton pesquisou sobre o movimento dos planetas durante muitos anos. Diz-se que certo dia, enquanto refletia sobre esses assuntos embaixo de uma macieira, uma maça cai exatamente em cima de sua cabeça e ele teve um estalo que deu origem ao seu maior feito em Física que culminaria na Teoria da Gravitação Universal. Essa teoria, assim como a mecânica do movimento - espaço, velocidade, aceleração, força, momento, etc. Foram desenvolvidas graças ao Cálculo Diferencial e Integral que permitiu que várias grandezas físicas se relacionassem entre si de maneira coerente, tornando o desenvolvimento da Mecânica muito frutífero.</p>                    
+                            <p>Influenciado por Galileo e também por Kepler, Newton pesquisou sobre o movimento dos planetas durante muitos anos. Diz-se que certo dia, enquanto refletia sobre esses assuntos embaixo de uma macieira, uma maça cai exatamente em cima de sua cabeça e ele teve um estalo que deu origem ao seu maior feito em Física que culminaria na Teoria da Gravitação Universal. Essa teoria, assim como a mecânica do movimento - espaço, velocidade, aceleração, força, momento, etc. Foram desenvolvidas graças ao Cálculo Diferencial e Integral que permitiu que várias grandezas físicas se relacionassem entre si de maneira coerente, tornando o desenvolvimento da Mecânica muito frutífero.</p>  <br>                 
                             <br>
-                            <h4>- Leibniz, Gottfried Wilhelm: </h4>
-                                Gottfried Wilhelm Leibniz nasceu em Leipzig, Alemanha, em 1 de julho de 1646. Seu pai era um professor luterano de filosofia moral. Leibniz desenvolveu um amplo espectro de interesses em função de seu interesse pelos livros da biblioteca de seu pai. Ele foi educado na Universidade de Leipzig e concluiu seu doutorado em Direito na Universidade de Nuremberg em 1666.</p>
+                            <h4> Gottfried Wilhelm Leibniz (1646 - 1716) </h4>
+                                Gottfried Wilhelm Leibniz nasceu em Leipzig, Alemanha, em 1 de julho de 1646. Seu pai era um professor luterano de filosofia moral. Leibniz desenvolveu um amplo espectro de interesses em função de seu interesse pelos livros da biblioteca de seu pai. Ele foi educado na Universidade de Leipzig e concluiu seu doutorado em Direito na Universidade de Nuremberg em 1666.</p> <br>
                                
-                               <p>Leibniz aperfeiçoou a máquina de calcular inventada por Blaise Pascal, tornando-a capaz de multiplicar e dividir; estabeleceu os fundamentos do cálculo integral e do cálculo diferencial, trabalhando independentemente de Newton; fundou a dinâmica, uma área das ciências mecânicas; trabalhou em dispositivos mecânicos como relógios, prensas hidráulicas, luminárias, submarinos, e moinhos de vento; aperfeiçoou o sistema binário de numeração usado hoje em operações de computador; inventou a teoria de que todo raciocínio pode ser reduzido a uma combinação ordenada de elementos como números, palavras, sons, ou cores (a base teórica dos computadores modernos); estabeleceu as bases para a topologia geral, um ramo da matemática; esforçou-se para formular uma base para a unificação das igrejas; e procurou elaborar uma história universal. A notação hoje utilizada no cálculo infinitesimal é basicamente devida a Leibniz. Ele também continuou aperfeiçoando seu sistema metafísico por meio da pesquisa sobre a noção de uma causa universal de todo o ser.</p>
+                               <p>Leibniz aperfeiçoou a máquina de calcular inventada por Blaise Pascal, tornando-a capaz de multiplicar e dividir; estabeleceu os fundamentos do cálculo integral e do cálculo diferencial, trabalhando independentemente de Newton; fundou a dinâmica, uma área das ciências mecânicas; trabalhou em dispositivos mecânicos como relógios, prensas hidráulicas, luminárias, submarinos, e moinhos de vento; aperfeiçoou o sistema binário de numeração usado hoje em operações de computador; inventou a teoria de que todo raciocínio pode ser reduzido a uma combinação ordenada de elementos como números, palavras, sons, ou cores (a base teórica dos computadores modernos); estabeleceu as bases para a topologia geral, um ramo da matemática; esforçou-se para formular uma base para a unificação das igrejas; e procurou elaborar uma história universal. A notação hoje utilizada no cálculo infinitesimal é basicamente devida a Leibniz. Ele também continuou aperfeiçoando seu sistema metafísico por meio da pesquisa sobre a noção de uma causa universal de todo o ser.</p> <br>
                                
-                               <p>Ele tentou provar que só Deus poderia ser a fonte de todas as coisas. 'Theodicy', o único trabalho principal publicado em vida, explicou as suas idéias a respeito da justiça divina. 'Monadology', escrito dois anos antes da sua morte, detalha a teoria de mônadas que ele concebeu a respeito do modo pelo qual simples substâncias espirituais formaram a base para todas as formas compostas de realidade. A teoria de mônadas, um termo derivado do grego, significando "aquilo que é um" ou "unidade" é elaborada em 'Monadology'. A teoria tenta descrever um universo harmonioso composto de um número infinito de mônadas, ou unidades, organizadas em uma hierarquia e originadas no Mônada Supremo que é Deus. O Monismo teve suas raizes na filosofia da Grécia antiga sendo continuado por pensadores eminentes como Emmanuel Kant, Edmund Husserl, e Alfred North Whitehead. A hierarquia do monismo era, de acordo com Leibniz, o "melhor de todos os mundos possíveis". Envolvido em uma séria disputa com Newton sobre a primazia no desenvolvimento do cálculo infinitesimal, filósofo morreu em Hanover em 14 de novembro de 1716.</p>                
+                               <p>Ele tentou provar que só Deus poderia ser a fonte de todas as coisas. 'Theodicy', o único trabalho principal publicado em vida, explicou as suas idéias a respeito da justiça divina. 'Monadology', escrito dois anos antes da sua morte, detalha a teoria de mônadas que ele concebeu a respeito do modo pelo qual simples substâncias espirituais formaram a base para todas as formas compostas de realidade. A teoria de mônadas, um termo derivado do grego, significando "aquilo que é um" ou "unidade" é elaborada em 'Monadology'. A teoria tenta descrever um universo harmonioso composto de um número infinito de mônadas, ou unidades, organizadas em uma hierarquia e originadas no Mônada Supremo que é Deus. O Monismo teve suas raizes na filosofia da Grécia antiga sendo continuado por pensadores eminentes como Emmanuel Kant, Edmund Husserl, e Alfred North Whitehead. A hierarquia do monismo era, de acordo com Leibniz, o "melhor de todos os mundos possíveis". Envolvido em uma séria disputa com Newton sobre a primazia no desenvolvimento do cálculo infinitesimal, filósofo morreu em Hanover em 14 de novembro de 1716.</p> <br>              
                                <br>
-                               <h4>Isaac Newton x Gottfried Wilhelm Leibniz: paternidade/descoberta do cálculo infinitesimal</h4>
 
-                               <p>Cálculo infinitesimal:<br>
-                               cálculo infinitesimal tão versátil é a grande variedade de áreas em que pode ser aplicado, como na matemática, na física, na tecnológica e na economia. A derivada é, por exemplo, um conceito fundamental da física, pois explica acelerações, velocidades instantâneas e forças.</p>
-                               
-                               <h4>Newton x Leibniz:</h4>
-                               Newton e Leibniz: (1) sintetizaram dois conceitos, que chamamos agora de derivada e integral;<br>
-                               (2) desenvolveram as ferramentas para gerenciá-los;<br>
-                               (3) mostraram serem conceitos inversos, o que é chamado teorema o cálculo-crítica;<br>
-                               (4) ensinaram como usar uma forma unificada para resolver um enorme catálogo de problemas que até então estavam sob estudo de caso a caso.</p>
-                               
+                               <h4>Qual a finalidade do cálculo infinitesimal:</h4>
+                               O cálculo infinitesimal tão versátil é a grande variedade de áreas em que pode ser aplicado, como na matemática, na física, na tecnológica e na economia. A derivada é, por exemplo, um conceito fundamental da física, pois explica acelerações, velocidades instantâneas e forças.</p> <br>
+                            
+                               <h4>Isaac Newton x Gottfried Wilhelm Leibniz: de quem foi a descoberta do cálculo infinitesimal? </h4>
+                                <p>Será citado a descoberta e a influência que suas descobertas sobre cálculo infinitesimal causaram:</p>
+                                <p>- Tanto Newton quanto Leibniz: sintetizaram dois conceitos, que chamamos agora de derivada e integral;<br>
+                                - Ambos desenvolveram as ferramentas para gerenciá-los;<br>
+                                - Os dois mostraram conceitos inversos, o que é chamado de teorema o cálculo-crítica; <br>
+                                - Eles ensinaram como usar uma forma unificada para resolver um enorme catálogo de problemas que até entãp estavam sob estudo de caso a caso <br> </p>
                                <p>A disputa teve seu fim em 1727, com a morte de Newton. O que se sabe com certeza é que ambos descobriram o cálculo infinitesimal de maneira independente e publicaram em momentos diferentes da vida.</p>
                     </article>
                 </div>
@@ -287,6 +321,7 @@ a:hover {
     
 </body>
 </html>
+
 
 
 
